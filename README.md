@@ -37,3 +37,13 @@ From now on, whenever you ask the AI to build a feature, it will automatically:
 ├── .cursorrules                  # Trỏ Cursor đọc thư mục .ai/
 └── README.md
 ```
+
+## Sync skills to downstream projects
+
+```powershell
+.\scripts\sync-skills.ps1 -DryRun              # preview
+.\scripts\sync-skills.ps1 -Commit -Push        # copy + commit + push
+.\scripts\sync-skills.ps1 -Projects MyApp     # custom target(s)
+```
+Default targets are listed in the -Projects param of the script. Project-specific skills are never deleted.
+
