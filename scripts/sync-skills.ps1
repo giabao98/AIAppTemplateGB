@@ -16,7 +16,7 @@
 [CmdletBinding()]
 param(
     # Project folder names (siblings of the template) or absolute paths.
-    [string[]]$Projects = @('WebCrawler', 'BrianWebTemplate', 'BrianTripPlanning'),
+    [string[]]$Projects = @('WebCrawler', 'BrianWebTemplate', 'BrianTripPlanning', 'TaskPlanning', 'TangVk2010'),
     [switch]$Commit,
     [switch]$Push,
     [switch]$DryRun,
